@@ -1,0 +1,146 @@
+\hypertarget{classcalculator_1_1_calculator}{}\doxysection{calculator.\+Calculator Class Reference}
+\label{classcalculator_1_1_calculator}\index{calculator.Calculator@{calculator.Calculator}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classcalculator_1_1_calculator_a07c73043755d056a4ee6461788de1ecc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classcalculator_1_1_calculator_a9cbfc5ccfd0c3ab741cf1a5880de4426}{command\+\_\+parser}} (self, command, a, b)
+\item 
+def \mbox{\hyperlink{classcalculator_1_1_calculator_a2188072ceff4687afeb2e3d3a95c8e6b}{add}} (self, a, b)
+\item 
+def \mbox{\hyperlink{classcalculator_1_1_calculator_ad6bbd0349c3eedfbb3383b7af12bab24}{sub}} (self, a, b)
+\item 
+def \mbox{\hyperlink{classcalculator_1_1_calculator_a04ba6463f04d334ab0995c0eaca4dbdd}{mult}} (self, a, b)
+\item 
+def \mbox{\hyperlink{classcalculator_1_1_calculator_ac36f86f9a82ac8a8cf194b8a583f0851}{div}} (self, a, b)
+\item 
+def \mbox{\hyperlink{classcalculator_1_1_calculator_af14c2f91e53296548e562d1e2d6e7464}{start}} (self)
+\item 
+def \mbox{\hyperlink{classcalculator_1_1_calculator_a3db749c5105bca61fd1de64bee620f88}{get\+\_\+last\+\_\+res}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcalculator_1_1_calculator_a665a9cee0bb448d75c98774fb3ec4999}\label{classcalculator_1_1_calculator_a665a9cee0bb448d75c98774fb3ec4999}} 
+{\bfseries last\+\_\+result}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcalculator_1_1_calculator_a07c73043755d056a4ee6461788de1ecc}\label{classcalculator_1_1_calculator_a07c73043755d056a4ee6461788de1ecc}} 
+\index{calculator.Calculator@{calculator.Calculator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!calculator.Calculator@{calculator.Calculator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def calculator.\+Calculator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Class initializer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcalculator_1_1_calculator_a2188072ceff4687afeb2e3d3a95c8e6b}\label{classcalculator_1_1_calculator_a2188072ceff4687afeb2e3d3a95c8e6b}} 
+\index{calculator.Calculator@{calculator.Calculator}!add@{add}}
+\index{add@{add}!calculator.Calculator@{calculator.Calculator}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily def calculator.\+Calculator.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Summation
+
+Args:
+    a (float): 1st oprand
+    b (float): 2nd oprand
+
+Returns:
+    float: summ of the operands
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classcalculator_1_1_calculator_a9cbfc5ccfd0c3ab741cf1a5880de4426}\label{classcalculator_1_1_calculator_a9cbfc5ccfd0c3ab741cf1a5880de4426}} 
+\index{calculator.Calculator@{calculator.Calculator}!command\_parser@{command\_parser}}
+\index{command\_parser@{command\_parser}!calculator.Calculator@{calculator.Calculator}}
+\doxysubsubsection{\texorpdfstring{command\_parser()}{command\_parser()}}
+{\footnotesize\ttfamily def calculator.\+Calculator.\+command\+\_\+parser (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{command,  }\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Command selctor
+
+Args:
+    command (str): describes a command to operate
+    a (float): 1st oprand
+    b (float): 2nd oprand
+Returns:
+    float: result of the operation if the command was valid
+    None: if the command was invalid\end{DoxyVerb}
+ \mbox{\Hypertarget{classcalculator_1_1_calculator_ac36f86f9a82ac8a8cf194b8a583f0851}\label{classcalculator_1_1_calculator_ac36f86f9a82ac8a8cf194b8a583f0851}} 
+\index{calculator.Calculator@{calculator.Calculator}!div@{div}}
+\index{div@{div}!calculator.Calculator@{calculator.Calculator}}
+\doxysubsubsection{\texorpdfstring{div()}{div()}}
+{\footnotesize\ttfamily def calculator.\+Calculator.\+div (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Division
+
+Args:
+    a (float): 1st oprand
+    b (float): 2nd oprand
+
+Raises:
+    ValueError: raises whenever the "b" operand is zero
+
+Returns:
+    float: result of the devision of two operands
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classcalculator_1_1_calculator_a3db749c5105bca61fd1de64bee620f88}\label{classcalculator_1_1_calculator_a3db749c5105bca61fd1de64bee620f88}} 
+\index{calculator.Calculator@{calculator.Calculator}!get\_last\_res@{get\_last\_res}}
+\index{get\_last\_res@{get\_last\_res}!calculator.Calculator@{calculator.Calculator}}
+\doxysubsubsection{\texorpdfstring{get\_last\_res()}{get\_last\_res()}}
+{\footnotesize\ttfamily def calculator.\+Calculator.\+get\+\_\+last\+\_\+res (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Getting last result
+
+Returns:
+    float: last result
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classcalculator_1_1_calculator_a04ba6463f04d334ab0995c0eaca4dbdd}\label{classcalculator_1_1_calculator_a04ba6463f04d334ab0995c0eaca4dbdd}} 
+\index{calculator.Calculator@{calculator.Calculator}!mult@{mult}}
+\index{mult@{mult}!calculator.Calculator@{calculator.Calculator}}
+\doxysubsubsection{\texorpdfstring{mult()}{mult()}}
+{\footnotesize\ttfamily def calculator.\+Calculator.\+mult (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Multiplication
+
+Args:
+    a (float): 1st oprand
+    b (float): 2nd oprand
+
+Returns:
+    float: result of multiplication of two operands
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classcalculator_1_1_calculator_af14c2f91e53296548e562d1e2d6e7464}\label{classcalculator_1_1_calculator_af14c2f91e53296548e562d1e2d6e7464}} 
+\index{calculator.Calculator@{calculator.Calculator}!start@{start}}
+\index{start@{start}!calculator.Calculator@{calculator.Calculator}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily def calculator.\+Calculator.\+start (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializing user comand line interaction
+
+Returns:
+    int: returns 0 whenever user decides to exit the calculator
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classcalculator_1_1_calculator_ad6bbd0349c3eedfbb3383b7af12bab24}\label{classcalculator_1_1_calculator_ad6bbd0349c3eedfbb3383b7af12bab24}} 
+\index{calculator.Calculator@{calculator.Calculator}!sub@{sub}}
+\index{sub@{sub}!calculator.Calculator@{calculator.Calculator}}
+\doxysubsubsection{\texorpdfstring{sub()}{sub()}}
+{\footnotesize\ttfamily def calculator.\+Calculator.\+sub (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Difference
+
+Args:
+    a (float): 1st oprand
+    b (float): 2nd oprand
+
+Returns:
+    float: difference between two operands
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+calculator.\+py\end{DoxyCompactItemize}

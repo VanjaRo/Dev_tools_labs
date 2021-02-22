@@ -1,0 +1,53 @@
+{
+	"Hello World": {
+		"scope": "python",
+		"prefix": "hello",
+		"body": [
+			"print('Hello World!')",
+		],
+		"description": "Print hello world as fast as possible!"
+	},
+	"Fizz Buzz": {
+		"scope": "python",
+		"prefix": "fizz",
+		"body": [
+			"for i in range(1, 101):",
+    		"    if i % 3 == 0 and i % 5 == 0:",
+        	"        print ('FizzBuzz')",
+    		"    elif i % 3 == 0:",
+        	"        print ('Fizz')",
+    		"    elif i % 5 == 0:",
+        	"        print ('Buzz')",
+    		"    else:",
+        	"        print (str(i))",
+		],
+		"description": "Print fizz-buzz as fast as possible!"
+	},
+	"For loop": {
+		"scope": "python",
+		"prefix": "for",
+		"body": [
+			"for $1 in range($2):",
+		],
+		"description": "For loop."
+	},
+	"Name Main": {
+		"scope": "python",
+		"prefix": "name-main",
+		"body": [
+			"if __name__ == '__main__':",
+		],
+		"description": "Separate package and running part."
+	},
+	"Parse CLI args": {
+		"scope": "python",
+		"prefix": ["parse", "argparse"],
+		"body": [
+			"def parse_args():",
+			"    parser = argparse.ArgumentParser()",
+			"    parser.add_argument($1)",
+			"    return parser.parse_args()",
+		],
+		"description": "Definition of funnction for parsing CLI arguments."
+	},
+}
